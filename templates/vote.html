@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static staticfiles i18n %}
+
+
+{% block title %}{% trans 'Vote' %}{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/voting-boxes.css' %}">
+{% endblock head %}
+
+
+
+
+{% block main %}
+
+    <div class="row">
+        <div class="box" onclick="window.open('https://coinfund.slack.com','_blank');"><div class="inner">Coinfund Slack</div></div>
+        <div class="box" onclick="window.open('https://web.telegram.org/#/im?p=@whalepoolbtc','_blank');"><div class="inner">Whalepool</div></div>
+        <div class="box" onclick="window.open('https://web.telegram.org/#/im?p=@AltSignals','_blank');"><div class="inner">Alt Signals</div></div>
+        <div class="box" onclick="window.open('https://web.telegram.org/#/im?p=@coinfarm','_blank');"><div class="inner">Coin Farm</div></div>
+    </div>
+{% endblock main %}

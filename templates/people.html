@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static staticfiles %}
+{% load i18n %}
+
+
+{% block title %}{% trans 'Checkin' %}{% endblock %}
+
+{% block head %}
+
+{% endblock head %}
+
+{% block directory %}
+  people
+{% endblock directory %}
+
+{% block page_title %}
+	 // People
+{% endblock page_title %}
+
+{% block main %}
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">Hacker Profile</div>
+				<div class="panel-body">
+					<div class="canvas-wrapper">
+						<canvas class="main-chart" id="pie-chart" height="200" width="600"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">Sponsor Profile</div>
+				<div class="panel-body">
+					<div class="canvas-wrapper">
+						<canvas class="main-chart" id="doughnut-chart" height="200" width="600"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--/.row-->
+
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					Participant List
+				</div>
+				<div class="panel-body">
+					<div class="icon-grid">
+						<div class="col-md-4 col-sm-6 col-xs-6">
+							<img src="{% static 'img/profile-6.jpg' %}" class="img-circle">
+							<h1>Rachel</h1>
+							<p>Developer</p>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-6">
+							<img src="{% static 'img/profile-9.jpg' %}" class="img-circle">
+							<h1>Naomi</h1>
+							<p>Entrepreneur</p>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-6">
+							<img src="{% static 'img/profile-2.png' %}" class="img-circle">
+							<h1>Alex</h1>
+							<p>Developer</p>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-6">
+							<img src="{% static 'img/profile-7.jpg' %}" class="img-circle">
+							<h1>Sophia</h1>
+							<p>Developer</p>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-6">
+							<img src="{% static 'img/profile-3.jpg' %}" class="img-circle">
+							<h1>Ali</h1>
+							<p>Developer</p>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-6">
+							<img src="{% static 'img/profile-8.jpg' %}" class="img-circle">
+							<h1>Tina</h1>
+							<p>Designer</p>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-6">
+							<img src="{% static 'img/profile-1.jpg' %}" class="img-circle">
+							<h1>John</h1>
+							<p>Developer</p>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-6">
+							<img src="{% static 'img/profile-4.jpg' %}" class="img-circle">
+							<h1>Tim</h1>
+							<p>Developer</p>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-6">
+							<img src="{% static 'img/profile-5.jpg' %}" class="img-circle">
+							<h1>Tyler</h1>
+							<p>Developer</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--/.row-->
+</div>	<!--/.main-->
+{% endblock main %}
